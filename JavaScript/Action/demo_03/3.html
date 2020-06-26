@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>衣服相册</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            overflow: hidden;
+        }
+        ul li{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 2px solid #fff;
+        }
+        ul li.active {
+            border-color: red;
+        }
+        #bigImg{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/01.jpg" alt="" id="bigImg">
+    <ul>
+        <li class="active">
+            <a href="">
+                <img src="images/01.jpg" width="46" alt="" class="smallImg">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="images/02.jpg" width="46" alt="" class="smallImg">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="images/03.jpg" width="46" alt="" class="smallImg">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="images/04.jpg" width="46" alt="" class="smallImg">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="images/05.jpg" width="46" alt="" class="smallImg">
+            </a>
+        </li>
+    </ul>
+    <script src="3.js"></script>
+</body>
+</html>
