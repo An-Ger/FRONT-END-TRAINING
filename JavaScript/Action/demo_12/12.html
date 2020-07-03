@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九宫格布局</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #wrap{
+            overflow: hidden;
+        }
+        #wrap .item{
+            width: 248px;
+            height: 360px;
+            font-size: 13px;
+        }
+        #wrap .item .title{
+            width: 248px;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+            margin-bottom: 10px;
+
+        }
+        .imgContainer{
+            width: 248px;
+            display: table-cell;
+            text-align: center;
+        }
+        #wrap .item .price{
+            color: red;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="cols">
+        <button>111</button>
+        <button>222</button>
+        <button>333</button>
+    </div>
+    <div id="wrap">
+        <div class="item">
+            <div class="imgContainer">
+                <img src="images/01.jpg" alt="">
+            </div>
+            <p class="title">11111</p>
+            <p class="price">11111</p>
+        </div>
+        <div class="item">
+            <div class="imgContainer">
+                <img src="images/02.jpg" alt="">
+            </div>
+            <p class="title">22222</p>
+            <p class="price">22222</p>
+        </div>
+        <div class="item">
+            <div class="imgContainer">
+                <img src="images/03.jpg" alt="">
+            </div>
+            <p class="title">33333</p>
+            <p class="price">33333</p>
+        </div>
+        <div class="item">
+            <div class="imgContainer">
+                <img src="images/04.jpg" alt="">
+            </div>
+            <p class="title">44444</p>
+            <p class="price">44444</p>
+        </div>
+        <div class="item">
+            <div class="imgContainer">
+                <img src="images/05.jpg" alt="">
+            </div>
+            <p class="title">55555</p>
+            <p class="price">55555</p>
+        </div>
+    </div>
+    <script src="12.js"></script>
+</body>
+</html>
